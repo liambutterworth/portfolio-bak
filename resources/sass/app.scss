@@ -1,1 +1,30 @@
-//
+@import 'mixins';
+@import 'variables';
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+
+    &::after,
+    &::before {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    background-color: $color-background;
+    color: $color-foreground;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
